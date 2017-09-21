@@ -11,6 +11,7 @@ sudo systemctl status docker
 # get application code
 sudo rm -r ~/twitter_feed/
 git clone https://github.com/marco-willi/twitter_feed.git ~/twitter_feed
+chmod +x ~/twitter_feed/code/run.sh
 
 # build docker
 cd ~/twitter_feed
