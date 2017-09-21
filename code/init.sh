@@ -19,3 +19,4 @@ sudo docker run -it -v ~/twitter_feed/code:/code twitter_feed:latest bash
 
 # run
 cd /code
+python main.py
