@@ -2,4 +2,5 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y \
     python-pip
 RUN pip install tweepy
+WORKDIR /code
 WORKDIR /data
