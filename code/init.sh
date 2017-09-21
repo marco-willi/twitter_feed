@@ -15,4 +15,7 @@ git clone https://github.com/marco-willi/twitter_feed.git ~/twitter_feed
 # build docker
 cd ~/twitter_feed
 sudo docker build -t twitter_feed .
-sudo docker run -it twitter_feed:latest bash
+sudo docker run -it -v ~/twitter_feed/code:/code twitter_feed:latest bash
+
+# run
+cd /code
