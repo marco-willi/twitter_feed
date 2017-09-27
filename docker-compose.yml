@@ -8,7 +8,6 @@ services:
     depends_on:
       - mongodb
     volumes:
-      - /db:/data
       - /home/ubuntu/twitter_feed/code:/code
   mongodb:
     image: mongo:latest
@@ -16,4 +15,8 @@ services:
       - "27017:27017"
     volumes:
       - /db:/data/db
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/data/db
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
     restart: always
