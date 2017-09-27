@@ -1,9 +1,9 @@
-# Get Twitter feeds
+# Stream Tweets & Store to DB
 
-Dockerfile to fetch Twitter feeds using "tweepy".
+Docker compose to fetch Twitter feed using "tweepy", and MongoDB to store.
 
 Install & Build docker with:
 /code/init.sh
 
 Run with:
-sudo docker run -it -v ~/twitter_feed/code:/code twitter_feed:latest /code/run.sh
+sudo docker-compose up

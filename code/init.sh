@@ -21,7 +21,7 @@ chmod +x ~/twitter_feed/code/run.sh
 # run docker compose
 sudo mkdir /db
 cd ~/twitter_feed
-sudo docker-compose up --build
+# sudo docker-compose up --build
 
 # build docker
 # cd ~/twitter_feed
