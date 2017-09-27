@@ -1,11 +1,15 @@
-version: '1'
+version: '3'
 services:
-  Tweepy:
+  tweepy:
     build: .
+    container_name: "tweepy"
     links:
-        - mongodb
+      - mongodb
     depends_on:
-        - mongodb
+      - mongodb
+    volumes:
+      - /home/ubuntu/twitter_feed/data:/data
+      - /home/ubuntu/twitter_feed/code:/code
   mongodb:
     image: mongo:latest
     ports:

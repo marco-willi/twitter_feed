@@ -18,9 +18,12 @@ sudo rm -r ~/twitter_feed/
 git clone https://github.com/marco-willi/twitter_feed.git ~/twitter_feed
 chmod +x ~/twitter_feed/code/run.sh
 
+# run docker compose
+sudo docker-compose up
+
 # build docker
-cd ~/twitter_feed
-sudo docker build -t twitter_feed .
+# cd ~/twitter_feed
+# sudo docker build -t twitter_feed .
 # sudo docker run -it -v ~/twitter_feed/code:/code twitter_feed:latest /code/run.sh
 
 # run
