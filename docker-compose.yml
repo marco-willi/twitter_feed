@@ -8,12 +8,12 @@ services:
     depends_on:
       - mongodb
     volumes:
-      - /home/ubuntu/twitter_feed/data:/data
+      - /db:/data
       - /home/ubuntu/twitter_feed/code:/code
   mongodb:
     image: mongo:latest
     ports:
       - "27017:27017"
     volumes:
-      - /srv/docker/mongodb:/var/lib/mongodb
+      - /db:/data/db
     restart: always

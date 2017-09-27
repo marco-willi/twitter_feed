@@ -19,6 +19,7 @@ git clone https://github.com/marco-willi/twitter_feed.git ~/twitter_feed
 chmod +x ~/twitter_feed/code/run.sh
 
 # run docker compose
+sudo mkdir /db
 cd ~/twitter_feed
 sudo docker-compose up --build
 

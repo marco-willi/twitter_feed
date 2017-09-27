@@ -29,7 +29,7 @@ class MongoDBListener(StreamListener):
 if __name__ == '__main__':
 
     # Database
-    client = MongoClient('localhost', 27017)
+    client = MongoClient('mongodb', 27017)
     db = client['tweets']
     raw_tweets_collection = db['raw_tweets']
 
