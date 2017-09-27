@@ -1,3 +1,4 @@
+# from: https://github.com/tweepy/tweepy/blob/master/examples/streaming.py
 from __future__ import absolute_import, print_function
 
 from tweepy.streaming import StreamListener
