@@ -4,3 +4,4 @@ RUN apt-get update && apt-get install -y \
 RUN pip install tweepy
 WORKDIR /data
 WORKDIR /code
+CMD ["python", "main.py"]

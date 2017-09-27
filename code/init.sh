@@ -8,6 +8,11 @@ apt-cache policy docker-ce
 sudo apt-get install -y docker-ce
 sudo systemctl status docker
 
+# install docker compose
+sudo curl -o /usr/local/bin/docker-compose -L "https://github.com/docker/compose/releases/download/1.16.1/docker-compose-$(uname -s)-$(uname -m)"
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose -v
+
 # get application code
 sudo rm -r ~/twitter_feed/
 git clone https://github.com/marco-willi/twitter_feed.git ~/twitter_feed

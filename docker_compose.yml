@@ -1,0 +1,15 @@
+version: '1'
+services:
+  Tweepy:
+    build: .
+    links:
+        - mongodb
+    depends_on:
+        - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - /srv/docker/mongodb:/var/lib/mongodb
+    restart: always
